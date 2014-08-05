@@ -1,3 +1,4 @@
+# encoding: ascii
 # stolen largely from http://www.ruby-forum.com/topic/140784
 
 require 'stringio'
@@ -49,7 +50,7 @@ ttf = File.new("/System/Library/Fonts/Apple Color Emoji.ttf","rb")
 ttf_data = ttf.read
 
 pos = 0
-while m = /\211PNG/.match(ttf_data[pos..-1])
+while m = Regexp.new("\211PNG").match(ttf_data[pos..-1])
   raise "no PNG found" if !m
   pos += m.begin(0) + 1
   ttf.seek(pos-1)
