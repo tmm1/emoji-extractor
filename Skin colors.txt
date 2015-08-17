@@ -1,0 +1,10 @@
+=========================
+=== Apple Color Emoji ===
+====== Skin Colors ======
+=========================
+Yellow
+White
+Light Skinned
+Light Intermediate
+Dark Intermediate
+Black
