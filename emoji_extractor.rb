@@ -1,3 +1,4 @@
+# encoding: US-ASCII
 # stolen largely from http://www.ruby-forum.com/topic/140784
 
 require 'stringio'
