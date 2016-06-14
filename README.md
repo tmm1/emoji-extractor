@@ -1,13 +1,10 @@
 ## emoji-extractor
 
-extracts high-resolution emoji pngs from `/System/Library/Fonts/Apple Color Emoji.ttf`
+extracts high-resolution emoji pngs from `/System/Library/Fonts/Apple Color Emoji.ttf` (OS X 10.11) or `/System/Library/Fonts/Apple Color Emoji.ttc` (macOS 10.12)
 
 ### usage
 
 ```
-$ file /System/Library/Fonts/Apple\ Color\ Emoji.ttf
-/System/Library/Fonts/Apple Color Emoji.ttf: TrueType font data
-
 $ ruby emoji_extractor.rb
 
 $ ls images
