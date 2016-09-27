@@ -46,14 +46,14 @@ def extract_png(input)
   ofp.close
 end
 
-ttf = File.new("/System/Library/Fonts/Apple Color Emoji.ttf","rb")
-ttf_data = ttf.read
+ttc = File.new("/System/Library/Fonts/Apple\ Color\ Emoji.ttc","rb")
+ttc_data = ttc.read
 
 pos = 0
-while m = /\211PNG/.match(ttf_data[pos..-1])
+while m = /\211PNG/.match(ttc_data[pos..-1])
   raise "no PNG found" if !m
   pos += m.begin(0) + 1
-  ttf.seek(pos-1)
+  ttc.seek(pos-1)
 
-  extract_png(ttf)
+  extract_png(ttc)
 end
